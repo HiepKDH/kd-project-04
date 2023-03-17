@@ -56,6 +56,7 @@ a {
 
 .navbar__list {
     display: flex;
+    padding-right: 69px;
 }
 
 .navbar__link {
@@ -64,14 +65,18 @@ a {
     color: #575d5e;
 }
 
-.header-action {
-    padding: 0 0.2rem 0 6.9rem;
+.header-content__bars-btn {
+    display: none;
 }
 
 /* Mobile & Tablet */
 @media (max-width: 1023px) {
     .hide-on-mobile-tablet {
         display: none;
+    }
+
+    .header-content__bars-btn {
+        display: block;
     }
 }
 

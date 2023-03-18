@@ -123,13 +123,48 @@
                         <a href="#!" class="btn header-action__signup">
                             Sign Up
                         </a>
-                        <img
-                            class="header-action__bars-btn"
-                            src="./assets/icons/bars.svg"
-                            alt=""
-                        />
+                        <label for="navbar-mobile-input">
+                            <img
+                                class="header-action__bars-btn"
+                                src="./assets/icons/bars.svg"
+                                alt=""
+                            />
+                        </label>
                     </div>
                 </div>
+                <!-- nav mobile -->
+                <input
+                    type="checkbox"
+                    name=""
+                    class="navbar__input"
+                    id="navbar-mobile-input"
+                />
+                <label
+                    for="navbar-mobile-input"
+                    class="navbar__overlay"
+                ></label>
+                <nav class="navbar__mobile">
+                    <label
+                        for="navbar-mobile-input"
+                        class="navbar__mobile-close"
+                    >
+                        <img src="./assets/icons/xmark-solid.svg" alt="" />
+                    </label>
+                    <ul class="navbar__mobile-list">
+                        <li>
+                            <a href="/" class="navbar__mobile-link">Home</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="navbar__mobile-link">About</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="navbar__mobile-link">Blog</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="navbar__mobile-link">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
         </header>
     </body>

@@ -17,7 +17,8 @@ a {
 }
 
 .container {
-    width: 1140px;
+    width: min(100%, 1140px);
+    /* padding: 0 max(1rem, calc(10vw - 40px)); */
     max-width: calc(100% - 48px);
     margin: 0 auto;
 }
@@ -65,8 +66,13 @@ a {
     color: #575d5e;
 }
 
-.header-content__bars-btn {
-    display: none;
+.header-action {
+    display: flex;
+    align-items: center;
+}
+
+.header-action__signup {
+    margin-right: 30px;
 }
 
 /* Mobile & Tablet */
@@ -101,5 +107,11 @@ a {
         min-width: 92px;
         line-height: 32px;
         font-size: 12px;
+    }
+}
+
+@media (min-width: 1023px) {
+    .header-action__bars-btn {
+        display: none;
     }
 }
